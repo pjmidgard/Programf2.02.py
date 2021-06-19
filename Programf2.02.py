@@ -253,9 +253,9 @@ class compression:
                                             x3=x2-x
                                             
                                             # Define a writer to compress a flat raw binary file.
-                                            w = Writer(chunk_duration=1.)
+                                            w = Writer(chunk_durati==1.)
                                             # Open the file to compress.
-                                            w.open('data.bin', sample_rate=30000., n_channels=256, dtype=np.int64)
+                                            w.open('data.bin', sample_rate=30000., n_channels=+1, dtype=np.int64)
                                             # Compress it into a compressed binary file, and a JSON header file.
                                             w.write('data.cbin', 'data.ch')
                                             w.close()
