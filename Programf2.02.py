@@ -249,8 +249,7 @@ class compression:
                                         if assx==10:
                                    
                                             f2.write(jl)
-                                            x2 = time()
-                                            x3=x2-x
+                                           
                                             
                                             # Define a writer to compress a flat raw binary file.
                                             w = Writer(chunk_duration=1.)
@@ -498,8 +497,7 @@ class compression:
                                                  jl=jl
                                                 
                                                  f2.write(jl)
-                                                 x2 = time()
-                                                 x3=x2-x
+                                                 
 
                                                  
 
