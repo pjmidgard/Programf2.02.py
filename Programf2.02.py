@@ -329,17 +329,39 @@ class compression:
 
                         
 
-                        name="datab.ch"
+                        name="data.cbin.bin"
 
                                                  
-                        nameas='data.cbin'
+                        nameas='data.cbin.bin'
                         nac=len(nameas)
-                        nameas=name[:nac-4]
+                        nameas=name
                                                         
                         x=0
                         x1=0
                         x2=0
                         x = time()
+
+
+                        nac=len(nameas)
+                    
+                        countraz=0
+                        cvf=2
+                        cvf1=0
+                        s=""
+                        e2=0
+                        e3=2
+                        e4=""
+                        c=2
+                        sw=2
+                        elw=0
+                 
+                        sda3=""
+                        sda2=""
+
+                        sscvf=0
+                    
+                        qqqqwzl=0
+
                                                    
                         with open(nameas, "w") as f4:
                             f4.write(s)
@@ -351,7 +373,7 @@ class compression:
                                                         
                             data = b'\x78\x9C'+data
                             s=str(data)
-                            enf1=len(data)
+                            lenf1=len(data)
                             lenf5=len(data)
                             if lenf1<6:
                                 print("This file is too small");
@@ -373,7 +395,7 @@ class compression:
                                     # Define a reader to decompress a compressed array.
                                     r = Reader()
                                     # Open the compressed dataset.
-                                    r.open('data.cbin', 'datab.ch')
+                                    r.open('data.cbin.bin', 'data.cbin')
                                     # The reader can be sliced as a NumPy array: decompression happens on the fly. Only chunks
                                     # that need to be loaded are loaded and decompressed.
                                     # Here, we load everything in memory.
