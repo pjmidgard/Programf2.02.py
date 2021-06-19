@@ -332,7 +332,7 @@ class compression:
                         name="data.cbin.bin"
 
                                                  
-                        nameas='data.cbin.bin'
+                        nameas='data.cbin'
                         nac=len(nameas)
                         nameas=name
                                                         
@@ -395,7 +395,7 @@ class compression:
                                     # Define a reader to decompress a compressed array.
                                     r = Reader()
                                     # Open the compressed dataset.
-                                    r.open('data.cbin.bin', 'data.cbin')
+                                    r.open('data.cbin', 'data.cbin')
                                     # The reader can be sliced as a NumPy array: decompression happens on the fly. Only chunks
                                     # that need to be loaded are loaded and decompressed.
                                     # Here, we load everything in memory.
