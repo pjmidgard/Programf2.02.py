@@ -259,7 +259,7 @@ class compression:
                                             w.write('data.cbin', 'data.ch')
                                             w.close()
 
-                                            name="datai.bin"
+                                            name="data.bin"
 
                                             assxw=0
                                             blockw=5
