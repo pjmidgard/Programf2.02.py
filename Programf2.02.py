@@ -395,7 +395,7 @@ class compression:
                                     # Define a reader to decompress a compressed array.
                                     r = Reader()
                                     # Open the compressed dataset.
-                                    r.open('data.cbin', 'data.cbin')
+                                    r.open('data.cbin', 'data.cbin.bin')
                                     # The reader can be sliced as a NumPy array: decompression happens on the fly. Only chunks
                                     # that need to be loaded are loaded and decompressed.
                                     # Here, we load everything in memory.
