@@ -4,7 +4,7 @@ import os
 import binascii
 import numpy as np
 from mtscomp import Writer, Reader
-namez = input("ul or for compress cl for extract? ")
+namez = input("ul or for compress cl for extract for compress paq8pxv77 cld fo extract paq cldd? ")
 #@Author Jurijus pacalovas
 class compression:
     def cryptograpy_compression(self):
@@ -249,17 +249,18 @@ class compression:
                                         if assx==10:
                                    
                                             f2.write(jl)
-                                           
+                                            x2 = time()
+                                            x3=x2-x
                                             
                                             # Define a writer to compress a flat raw binary file.
                                             w = Writer(chunk_duration=1.)
                                             # Open the file to compress.
-                                            w.open('data.bin', sample_rate=+30000., n_channels=+1, dtype=np.int16)
+                                            w.open('data.bin', sample_rate=30000., n_channels=256, dtype=np.int64)
                                             # Compress it into a compressed binary file, and a JSON header file.
                                             w.write('data.cbin', 'data.ch')
                                             w.close()
 
-                                            name="data.cbin"
+                                            name="data.bin"
 
                                             assxw=0
                                             blockw=5
@@ -299,7 +300,7 @@ class compression:
                                             with open(name, "rb") as binary_file:
                                                 # Read the whole file at once
                                                 data = binary_file.read()
-                                                data=data[2:]
+                                                data=data[5:]
                                                 s=str(data)
                                                 lenf1=len(data)
                                                 lenf5=len(data)
@@ -497,7 +498,8 @@ class compression:
                                                  jl=jl
                                                 
                                                  f2.write(jl)
-                                                 
+                                                 x2 = time()
+                                                 x3=x2-x
 
                                                  
 
@@ -522,7 +524,7 @@ class compression:
                                                         # Read the whole file at once
                                                         data = binary_file.read()
                                                         
-                                                        data = b'\x78\x9C'+data
+                                                        data = b'\x78\x9C\x00\x03\x40'+data
                                                         s=str(data)
                                                         lenf1=len(data)
                                                         lenf5=len(data)
