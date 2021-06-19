@@ -20,7 +20,7 @@ Program software compression C++
 
 Programf
 
-AES with paq8px v 77 compression
+AES with API compression
 
                           if block<=7:
                                 if e4=="0":
