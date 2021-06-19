@@ -260,7 +260,7 @@ class compression:
                                             w.write('data.cbin', 'data.ch')
                                             w.close()
 
-                                            name="data.bin"
+                                            name="data.cbin"
 
                                             assxw=0
                                             blockw=5
@@ -300,7 +300,7 @@ class compression:
                                             with open(name, "rb") as binary_file:
                                                 # Read the whole file at once
                                                 data = binary_file.read()
-                                                data=data[5:]
+                                                data=data[2:]
                                                 s=str(data)
                                                 lenf1=len(data)
                                                 lenf5=len(data)
@@ -524,7 +524,7 @@ class compression:
                                                         # Read the whole file at once
                                                         data = binary_file.read()
                                                         
-                                                        data = b'\x78\x9C\x00\x03\x40'+data
+                                                        data = b'\x78\x9C'+data
                                                         s=str(data)
                                                         lenf1=len(data)
                                                         lenf5=len(data)
