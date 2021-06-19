@@ -4,7 +4,7 @@ import os
 import binascii
 import numpy as np
 from mtscomp import Writer, Reader
-namez = input("ul or for compress cl for extract? ")
+namez = input("ul or for compress cl for extract for compress? ")
 #@Author Jurijus pacalovas
 class compression:
     def cryptograpy_compression(self):
